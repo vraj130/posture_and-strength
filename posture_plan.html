@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 5-Day Posture-Corrective Program</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        /* Simple transition for card hover effect */
+        .exercise-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">Posture Program</h1>
+            <div class="hidden md:flex space-x-4">
+                <a href="#day1" class="text-slate-600 hover:text-blue-600 transition-colors">Day 1</a>
+                <a href="#day2" class="text-slate-600 hover:text-blue-600 transition-colors">Day 2</a>
+                <a href="#day3" class="text-slate-600 hover:text-blue-600 transition-colors">Day 3</a>
+                <a href="#day4" class="text-slate-600 hover:text-blue-600 transition-colors">Day 4</a>
+                <a href="#day5" class="text-slate-600 hover:text-blue-600 transition-colors">Day 5</a>
+                 <a href="#breaks" class="text-slate-600 hover:text-blue-600 transition-colors">Breaks</a>
+            </div>
+             <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#day1" class="block py-2 text-slate-600 hover:text-blue-600">Day 1</a>
+            <a href="#day2" class="block py-2 text-slate-600 hover:text-blue-600">Day 2</a>
+            <a href="#day3" class="block py-2 text-slate-600 hover:text-blue-600">Day 3</a>
+            <a href="#day4" class="block py-2 text-slate-600 hover:text-blue-600">Day 4</a>
+            <a href="#day5" class="block py-2 text-slate-600 hover:text-blue-600">Day 5</a>
+            <a href="#breaks" class="block py-2 text-slate-600 hover:text-blue-600">Breaks</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <!-- Introduction -->
+        <section class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Your Interactive Guide to the 5-Day Posture Program</h1>
+            <p class="max-w-3xl mx-auto text-lg text-slate-600">A blueprint for a stronger, more aligned body. Use the links on each card to see a visual demonstration of the exercise.</p>
+        </section>
+
+        <!-- Workout Days Loop -->
+        <div id="workout-plan">
+            <!-- Day 1 -->
+            <section id="day1" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-blue-500 text-slate-900">Day 1: Upper Body Push + Posture Focus</h2>
+                
+                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Exercise Cards will be injected here by JS -->
+                </div>
+                
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Exercise Cards will be injected here by JS -->
+                </div>
+            </section>
+            
+            <!-- Day 2 -->
+            <section id="day2" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-green-500 text-slate-900">Day 2: Lower Body + Hip Mobility</h2>
+                
+                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Exercise Cards will be injected here by JS -->
+                </div>
+                
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Exercise Cards will be injected here by JS -->
+                </div>
+            </section>
+
+            <!-- Day 3 -->
+            <section id="day3" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-purple-500 text-slate-900">Day 3: Upper Body Pull + Back Focus</h2>
+                 <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+            </section>
+
+            <!-- Day 4 -->
+            <section id="day4" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-orange-500 text-slate-900">Day 4: Functional Movement + Core</h2>
+                 <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+            </section>
+
+            <!-- Day 5 -->
+            <section id="day5" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-red-500 text-slate-900">Day 5: Full Body + Posture Integration</h2>
+                 <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+            </section>
+
+             <!-- Daily Breaks -->
+            <section id="breaks" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-yellow-500 text-slate-900">Daily Posture Breaks (Outside the Gym)</h2>
+                <p class="text-slate-600 mb-6">These mini-sessions are crucial for reinforcing good habits throughout the day.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                     <!-- Exercise Cards will be injected here by JS -->
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white mt-16">
+        <div class="container mx-auto p-6 text-center">
+            <p>&copy; 2025 Posture Correction Program. Stay strong and aligned!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data for the workout plan
+        const workoutData = {
+            day1: {
+                activation: [
+                    { name: 'Cat-Cow Stretches', reps: '2 sets of 10', link: 'https://www.youtube.com/watch?v=y_cKHKi9UaM', note: 'Initiate from your tailbone, articulating through the entire spine to maximize mid-back mobility.' },
+                    { name: 'Shoulder Blade Squeezes', reps: '2 sets of 15', link: 'https://www.youtube.com/watch?v=9tJTdqUXW14', note: 'Imagine putting your shoulder blades into your back pockets. The motion is down and back.' },
+                    { name: 'Chin Tucks', reps: '2 sets of 10 (hold 3s)', link: 'https://www.youtube.com/watch?v=gIBoxQ6AlS0', note: 'Gently guide your chin straight back, creating a "double chin" to align your head over your shoulders.' },
+                    { name: 'Band Pull-Aparts', reps: '2 sets of 15', link: 'https://www.youtube.com/watch?v=bYsgk9SrJ48', note: 'Keep arms straight and pull the band to your chest, focusing on squeezing the shoulder blades.' },
+                ],
+                strength: [
+                    { name: 'Face Pulls', reps: '4 sets of 15-20', link: 'https://www.youtube.com/watch?v=eFxMixk_qPQ', note: 'Use a thumbs-up grip. Pull the rope towards your face with high elbows, finishing in a "rear double biceps" pose.' },
+                    { name: 'Prone Y-T-W Raises', reps: '4 sets of 8 each', link: 'https://www.youtube.com/watch?v=QdGTI4Lshg4', note: 'Use very light or no weight. Move slowly and deliberately, pausing at the top of each letter.' },
+                    { name: 'Incline Dumbbell Press', reps: '3 sets of 8-10', link: 'https://www.youtube.com/watch?v=8iPEnn-ltC8', note: 'Keep shoulder blades retracted into the bench. Lower to a 90-degree elbow angle to protect the shoulder.' },
+                    { name: 'Chest-Supported Dumbbell Row', reps: '3 sets of 10-12', link: 'https://www.youtube.com/watch?v=H75im9fAUMc', note: 'Rest chest on the pad. Pull dumbbells towards your hips in an arc, squeezing hard at the top.' },
+                    { name: 'Overhead Press (Seated)', reps: '3 sets of 6-8', link: 'https://www.youtube.com/watch?v=oBGeXxnigsQ', note: 'Brace your core to prevent back arching. Head moves slightly forward at the top, "through the window" of your arms.' },
+                    { name: 'Lateral Raises', reps: '3 sets of 12-15', link: 'https://www.youtube.com/watch?v=3VcKaXpzqRo', note: 'Lead with your elbows, not hands. Raise only to shoulder height. Avoid shrugging or using momentum.' },
+                    { name: 'Tricep Dips', reps: '2 sets of 8-12', link: 'https://www.youtube.com/watch?v=x5BXzsPkaww', note: 'Keep hips and back close to the bench. Lower only until your elbows are at a 90-degree angle.' },
+                    { name: 'Close-Grip Push-ups', reps: '2 sets of 8-12', link: 'https://www.youtube.com/watch?v=aYpove9uRbE', note: 'Hands inside shoulder-width. Keep elbows tucked close to your body as you lower.' },
+                ],
+            },
+            day2: {
+                activation: [
+                    { name: 'Hip Flexor Stretch', reps: '2 sets of 30s each', link: 'https://www.youtube.com/shorts/Mh1FgwOVQB4', note: 'Squeeze the glute of the back leg and tuck your pelvis to deepen the stretch at the front of the hip.' },
+                    { name: 'Glute Bridges', reps: '2 sets of 15', link: 'https://www.youtube.com/watch?v=WtilA9IJX1c', note: 'Drive through your heels. Squeeze your glutes at the top to create a straight line from shoulders to knees.' },
+                    { name: 'Deep Squat Hold', reps: '2 sets of 30s', link: 'https://www.youtube.com/watch?v=HUFXoff6y_M', note: 'Sit low while keeping heels on the floor and chest up. Use elbows to gently press knees outward.' },
+                    { name: 'Thoracic Extension', reps: '2 sets of 10', link: 'https://m.youtube.com/shorts/_KVE3qEytJ4', note: 'Lie with a foam roller across your upper back. Gently extend your spine over it, hips on the ground.' },
+                ],
+                strength: [
+                    { name: 'Clamshells', reps: '3 sets of 15 each', link: 'https://www.youtube.com/shorts/651XHC0gAlo', note: 'Keep feet together and lift your top knee without rocking your hips back to isolate the glute medius.' },
+                    { name: 'Single-Leg Glute Bridges', reps: '3 sets of 10 each', link: 'https://www.hingehealth.com/resources/articles/leg-bridge/', note: 'Focus on keeping your hips level and square; do not let one side drop.' },
+                    { name: 'Monster Walks', reps: '3 sets of 10 each direction', link: 'https://www.youtube.com/watch?v=wNAPSS3iJR4', note: 'Take lateral steps in a semi-squat, keeping tension on the band and feet pointing forward.' },
+                    { name: 'Goblet Squats', reps: '4 sets of 12-15', link: 'https://www.youtube.com/watch?v=yGswPtbSlro', note: 'Holding a weight at your chest helps you keep your torso upright and squat deeper.' },
+                    { name: 'Romanian Deadlifts', reps: '4 sets of 8-10', link: 'https://www.menshealth.com/uk/building-muscle/a29202950/romanian-deadlift-beginners-guide/', note: 'This is a hip hinge. Keep a slight knee bend and push hips back. Maintain a flat back.' },
+                    { name: 'Bulgarian Split Squats', reps: '3 sets of 10 each', link: 'https://www.youtube.com/shorts/o7yFuIR9XVU', note: 'Elevate your back foot. Lower down until your front thigh is parallel to the floor.' },
+                    { name: 'Walking Lunges', reps: '3 sets of 12 total', link: 'https://www.healthline.com/health/exercise-fitness/walking-lunges', note: 'Keep your front knee behind your toes and your torso upright to challenge balance and core.' },
+                    { name: 'Calf Raises', reps: '3 sets of 15-20', link: 'https://www.youtube.com/watch?v=jfKTT_hr8bk', note: 'Stand on a step edge for a full range of motion. Squeeze calves at the top.' },
+                ],
+            },
+            day3: {
+                 activation: [
+                    { name: 'Doorway Chest Stretch', reps: '2 sets of 30s each', link: 'https://www.youtube.com/watch?v=M850sCj9LHQ', note: 'Place forearms on a doorframe and step through gently to stretch the chest.' },
+                    { name: 'Upper Trap Stretch', reps: '2 sets of 20s each', link: 'https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=zp4500', note: 'Gently tilt your ear toward your shoulder, keeping the opposite shoulder down.' },
+                    { name: 'Thoracic Spine Rotation', reps: '2 sets of 8 each', link: 'https://www.youtube.com/watch?v=AzCghjjWt5k', note: 'On all fours, rotate your elbow up toward the ceiling, following with your eyes.' },
+                    { name: 'Scapular Wall Slides', reps: '2 sets of 10', link: 'https://www.youtube.com/watch?v=cvx06snMQ3A', note: 'Slide arms up a wall, keeping your back, elbows, and wrists in contact.' },
+                 ],
+                 strength: [
+                    { name: 'Chest-Supported T-Bar Row', reps: '4 sets of 8-10', link: 'https://www.youtube.com/watch?v=zLTwc6tA4X0', note: 'Focus on a big stretch at the bottom and a powerful squeeze of the shoulder blades at the top.' },
+                    { name: 'Reverse Flies', reps: '4 sets of 12-15', link: 'https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/reverse-fly/vid-20084679', note: 'Hinge at the hips with a flat back. Raise light weights out to the side, squeezing shoulder blades.' },
+                    { name: 'Lat Pulldowns (Wide Grip)', reps: '4 sets of 10-12', link: 'https://www.youtube.com/watch?v=lueEJGjTuPQ', note: 'Think about pulling your elbows down and into your back pockets to engage the lats.' },
+                    { name: 'Seated Cable Row', reps: '4 sets of 12-15', link: 'https://www.youtube.com/watch?v=GZbfZ033f74', note: 'Sit upright. Initiate the pull with your back and finish by squeezing your shoulder blades.' },
+                    { name: 'Pull-ups/Assisted Pull-ups', reps: '3 sets of 5-8', link: 'https://www.youtube.com/watch?v=aNUSgyWRJYA', note: 'Pull your chin over the bar and lower under control until arms are fully extended.' },
+                    { name: 'Single-Arm Dumbbell Row', reps: '3 sets of 10 each', link: 'https://www.youtube.com/watch?v=pYcpY20QaE8', note: 'Keep your back flat. Row the dumbbell up towards your hip, not your shoulder.' },
+                    { name: 'Hammer Curls', reps: '3 sets of 12-15', link: 'https://motusspt.com/bicep-curls-or-hammer-curls-the-best-way-to-build-biceps/', note: 'Use a neutral grip. Curl the weight up while keeping your elbows pinned to your sides.' },
+                    { name: 'Cable Curls', reps: '3 sets of 10-12', link: 'https://learn.athleanx.com/articles/how-to-do-the-cable-curl', note: 'The cable provides constant tension. Avoid swinging your body to lift the weight.' },
+                 ],
+            },
+            day4: {
+                 activation: [
+                    { name: 'Hip Circles', reps: '2 sets of 10 each direction', link: 'https://www.youtube.com/shorts/OqR7Tl6SPLQ', note: 'Draw large, controlled circles with one knee. Go slow and keep your torso still.' },
+                    { name: 'Leg Swings', reps: '2 sets of 10 each', link: 'https://www.kansashealthsystem.com/news-room/blog/0001/01/dynamic-stretching-exercises', note: 'Hold a support. Swing one leg forward/back and side to side in a controlled manner.' },
+                    { name: 'Arm Circles', reps: '2 sets of 10 each direction', link: 'https://www.thegymgroup.com/exercises/stretching-and-warmups-exercises/how-to-do-arm-circles/', note: 'Make small, controlled circles, gradually increasing the size. Reverse direction.' },
+                    { name: 'Bodyweight Squats', reps: '2 sets of 10', link: 'https://www.gymshark.com/blog/article/how-to-squat', note: 'Push your hips back and bend your knees, keeping your chest up and back straight.' },
+                 ],
+                 strength: [
+                    { name: 'Dead Bugs', reps: '4 sets of 8 each side', link: 'https://www.youtube.com/watch?v=4XLEnwUr1d8', note: 'Lower opposite arm and leg slowly, keeping your lower back pressed firmly into the floor.' },
+                    { name: 'Bird Dogs', reps: '4 sets of 6 each side (hold 3s)', link: 'https://www.nasm.org/workout-exercise-guidance/how-to-bird-dog', note: 'Extend opposite arm and leg, creating a straight line. Keep hips and shoulders square.' },
+                    { name: 'Pallof Press', reps: '4 sets of 10 each side', link: 'https://www.youtube.com/watch?v=ma2OjgP5XDc', note: 'Press straight out from your chest, resisting the rotational pull from a cable or band.' },
+                    { name: 'Farmer\'s Walks', reps: '4 sets of 40 yards', link: 'https://www.menshealth.com/uk/how-tos/a735438/dumbbell-farmers-walk/', note: 'Hold heavy dumbbells. Walk with your chest up, shoulders back, and core braced.' },
+                    { name: 'Kettlebell Swings', reps: '4 sets of 15-20', link: 'https://www.youtube.com/watch?v=YSxHifyI6s8', note: 'Drive the kettlebell forward using an explosive snap of your hips, not your arms.' },
+                    { name: 'Step-ups', reps: '3 sets of 10 each leg', link: 'https://www.puregym.com/exercises/glutes/step-ups/step-up/', note: 'Step onto a box, driving through the heel of your top foot. Avoid pushing off the bottom foot.' },
+                    { name: 'Plank Variations', reps: '3 sets of 30-45s', link: 'https://www.nike.com/a/plank-variations', note: 'Maintain a straight line from head to heels. Keep core and glutes engaged to prevent sagging hips.' },
+                 ],
+            },
+            day5: {
+                 activation: [
+                    { name: 'Dynamic Warm-up', reps: 'Full routine', link: 'https://www.kansashealthsystem.com/news-room/blog/0001/01/dynamic-stretching-exercises', note: 'Perform controlled arm swings, leg swings, and gentle torso twists to prepare the body.' },
+                    { name: 'Hip Flexor Stretch', reps: '1 minute', link: 'https://www.youtube.com/shorts/Mh1FgwOVQB4', note: 'Squeeze the glute of the back leg to achieve a true stretch in the front of the hip.' },
+                    { name: 'Shoulder Blade Squeezes', reps: '15 reps', link: 'https://www.youtube.com/watch?v=9tJTdqUXW14', note: 'Pull your shoulder blades down and back, imagining them going into your back pockets.' },
+                    { name: 'Chin Tucks', reps: '10 reps', link: 'https://www.youtube.com/watch?v=gIBoxQ6AlS0', note: 'Retract your head straight back without tilting to realign your head over your spine.' },
+                 ],
+                 strength: [
+                    { name: 'Wall Angels', reps: '3 rounds of 12', link: 'https://www.youtube.com/watch?v=M_ooIhKYs7c', note: 'Keep low back, shoulders, and arms against the wall to improve posture and shoulder mobility.' },
+                    { name: 'Squat to Overhead Reach', reps: '3 rounds of 10', link: 'https://www.youtube.com/watch?v=ujNy4KGkMnQ', note: 'As you stand from a squat, reach arms overhead to integrate mobility and strength.' },
+                    { name: 'Single-Leg RDL', reps: '3 rounds of 8 each', link: 'https://www.youtube.com/watch?v=ViVhUZGk6i4', note: 'Hinge at the hip, keeping your back flat and hips square to the floor. Builds stability.' },
+                    { name: 'Push-up to T', reps: '3 rounds of 6 each', link: 'https://evofitness.at/en/blog/learn-en/tutorial-push-up-with-rotation/', note: 'Perform a push-up, then rotate into a side plank. Combines pushing with core stability.' },
+                    { name: 'Turkish Get-up (modified)', reps: '3 rounds of 3 each', link: 'https://www.youtube.com/watch?v=_Nt36N0mnSk', note: 'Focus on rolling to your forearm and then to your hand while keeping the weight stable.' },
+                    { name: 'Reverse Lunge with Rotation', reps: '3 rounds of 8 each', link: 'https://www.youtube.com/watch?v=BMUw4mN4FFY', note: 'Step back into a lunge and rotate your torso over your front leg. Challenges balance.' },
+                    { name: 'Prone Swimming', reps: '3 rounds of 15', link: 'https://library.theprehabguys.com/vimeo-video/prone-swimmer-2/', note: 'Lie face down and lift your opposite arm and leg simultaneously. Strengthens the posterior chain.' },
+                    { name: 'Bear Crawl', reps: '3 rounds of 20 steps', link: 'https://www.youtube.com/watch?v=U3Y58Kyw7Xw', note: 'On all fours with knees hovering, crawl forward. Keep back flat and hips low.' },
+                    { name: 'Dumbbell Thrusters', reps: '3 sets of 8-10', link: 'https://www.youtube.com/watch?v=LA885CMp1yw', note: 'A front squat flowing into an overhead press. Use leg momentum to drive the weight up.' },
+                    { name: 'Renegade Rows', reps: '3 sets of 6 each arm', link: 'https://www.youtube.com/watch?v=OlpPaGyywyY', note: 'In a plank on dumbbells, row one arm while stabilizing with the other. Advanced core exercise.' },
+                 ],
+            },
+            breaks: {
+                activation: [
+                    { name: 'Chest Doorway Stretch', reps: '1 minute', link: 'https://www.youtube.com/watch?v=M850sCj9LHQ', note: 'Use a doorway to open up the chest muscles that get tight from sitting.' },
+                    { name: 'Hip Flexor Stretch', reps: '1 min each leg', link: 'https://www.youtube.com/shorts/Mh1FgwOVQB4', note: 'Use a lunge position to stretch the front of the hips, shortened from sitting.' },
+                    { name: 'Thoracic Extension', reps: '2 minutes', link: 'https://m.youtube.com/shorts/_KVE3qEytJ4', note: 'Use a foam roller or chair back to gently extend your mid-back.' },
+                    { name: 'Chin Tucks', reps: '10 reps', link: 'https://www.youtube.com/watch?v=gIBoxQ6AlS0', note: 'A quick and easy way to reset your head position over your spine.' },
+                    { name: 'Shoulder Blade Squeezes', reps: '15 reps', link: 'https://www.youtube.com/watch?v=9tJTdqUXW14', note: 'Actively pull your shoulder blades down and back to re-engage postural muscles.' },
+                    { name: 'Upper Trap Stretch', reps: '30s each side', link: 'https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=zp4500', note: 'Gently relieve neck and shoulder tension from stress and poor posture.' },
+                    { name: 'Cat-Cow Stretches', reps: '2 minutes', link: 'https://www.youtube.com/watch?v=y_cKHKi9UaM', note: 'A gentle way to bring movement and blood flow to the entire spine.' },
+                    { name: 'Deep Breathing', reps: '1.5 minutes', link: 'https://www.healthline.com/health/breathe-deeper-improve-health-and-posture', note: 'Sit or stand tall. Inhale deeply, feeling your abdomen expand.' },
+                ]
+            }
+        };
+
+        // Function to create an exercise card
+        function createExerciseCard(exercise) {
+            return `
+                <div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-900">${exercise.name}</h4>
+                        <p class="text-sm text-slate-500 mb-3">${exercise.reps}</p>
+                        <p class="text-slate-600 text-base mb-4">
+                           <span class="font-semibold text-slate-700">Expert's Note:</span> ${exercise.note}
+                        </p>
+                    </div>
+                    <a href="${exercise.link}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full">
+                        Watch Video
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            `;
+        }
+
+        // Function to populate the page
+        function populatePlan() {
+            // Day 1
+            const day1ActivationContainer = document.querySelector('#day1 div:nth-of-type(1)');
+            const day1StrengthContainer = document.querySelector('#day1 div:nth-of-type(2)');
+            workoutData.day1.activation.forEach(ex => day1ActivationContainer.innerHTML += createExerciseCard(ex));
+            workoutData.day1.strength.forEach(ex => day1StrengthContainer.innerHTML += createExerciseCard(ex));
+            
+            // Day 2
+            const day2ActivationContainer = document.querySelector('#day2 div:nth-of-type(1)');
+            const day2StrengthContainer = document.querySelector('#day2 div:nth-of-type(2)');
+            workoutData.day2.activation.forEach(ex => day2ActivationContainer.innerHTML += createExerciseCard(ex));
+            workoutData.day2.strength.forEach(ex => day2StrengthContainer.innerHTML += createExerciseCard(ex));
+            
+            // Day 3
+            const day3ActivationContainer = document.querySelector('#day3 div:nth-of-type(1)');
+            const day3StrengthContainer = document.querySelector('#day3 div:nth-of-type(2)');
+            workoutData.day3.activation.forEach(ex => day3ActivationContainer.innerHTML += createExerciseCard(ex));
+            workoutData.day3.strength.forEach(ex => day3StrengthContainer.innerHTML += createExerciseCard(ex));
+
+            // Day 4
+            const day4ActivationContainer = document.querySelector('#day4 div:nth-of-type(1)');
+            const day4StrengthContainer = document.querySelector('#day4 div:nth-of-type(2)');
+            workoutData.day4.activation.forEach(ex => day4ActivationContainer.innerHTML += createExerciseCard(ex));
+            workoutData.day4.strength.forEach(ex => day4StrengthContainer.innerHTML += createExerciseCard(ex));
+
+            // Day 5
+            const day5ActivationContainer = document.querySelector('#day5 div:nth-of-type(1)');
+            const day5StrengthContainer = document.querySelector('#day5 div:nth-of-type(2)');
+            workoutData.day5.activation.forEach(ex => day5ActivationContainer.innerHTML += createExerciseCard(ex));
+            workoutData.day5.strength.forEach(ex => day5StrengthContainer.innerHTML += createExerciseCard(ex));
+
+             // Daily Breaks
+            const breaksContainer = document.querySelector('#breaks div:nth-of-type(1)');
+            workoutData.breaks.activation.forEach(ex => breaksContainer.innerHTML += createExerciseCard(ex));
+        }
+
+        // Run the population function when the page loads
+        document.addEventListener('DOMContentLoaded', populatePlan);
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+    </script>
+</body>
+</html>
