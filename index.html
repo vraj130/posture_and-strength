@@ -1,20 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 5-Day Posture-Corrective Program</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interactive 5-Day Posture-Corrective Program</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Custom Styles -->
+<style>
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -48,112 +46,200 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
-
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-40">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl md:text-2xl font-bold text-slate-900">Posture Program</h1>
-            <div class="hidden md:flex space-x-4">
-                <a href="#day1" class="text-slate-600 hover:text-blue-600 transition-colors">Day 1</a>
-                <a href="#day2" class="text-slate-600 hover:text-blue-600 transition-colors">Day 2</a>
-                <a href="#day3" class="text-slate-600 hover:text-blue-600 transition-colors">Day 3</a>
-                <a href="#day4" class="text-slate-600 hover:text-blue-600 transition-colors">Day 4</a>
-                <a href="#day5" class="text-slate-600 hover:text-blue-600 transition-colors">Day 5</a>
-                <a href="#breaks" class="text-slate-600 hover:text-blue-600 transition-colors">Breaks</a>
-            </div>
-            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#day1" class="block py-2 text-slate-600 hover:text-blue-600">Day 1</a>
-            <a href="#day2" class="block py-2 text-slate-600 hover:text-blue-600">Day 2</a>
-            <a href="#day3" class="block py-2 text-slate-600 hover:text-blue-600">Day 3</a>
-            <a href="#day4" class="block py-2 text-slate-600 hover:text-blue-600">Day 4</a>
-            <a href="#day5" class="block py-2 text-slate-600 hover:text-blue-600">Day 5</a>
-            <a href="#breaks" class="block py-2 text-slate-600 hover:text-blue-600">Breaks</a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto p-4 md:p-8">
-        <section class="mb-12 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Your Interactive Guide to the 5-Day Posture Program</h1>
-            <p class="max-w-3xl mx-auto text-lg text-slate-600">A blueprint for a stronger, more aligned body. Click the button on each card to see a visual demonstration of the exercise.</p>
-        </section>
-
-        <!-- Workout Plan Container -->
-        <div id="workout-plan">
-            <!-- Day 1 -->
-            <section id="day1" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-blue-500 text-slate-900">Day 1: Upper Body Push + Posture Focus</h2>
-                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-            </section>
-            
-            <!-- Day 2 -->
-            <section id="day2" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-green-500 text-slate-900">Day 2: Lower Body + Hip Mobility</h2>
-                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-            </section>
-
-            <!-- Day 3 -->
-            <section id="day3" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-purple-500 text-slate-900">Day 3: Upper Body Pull + Back Focus</h2>
-                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-            </section>
-
-            <!-- Day 4 -->
-            <section id="day4" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-orange-500 text-slate-900">Day 4: Functional Movement + Core</h2>
-                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-            </section>
-
-            <!-- Day 5 -->
-            <section id="day5" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-red-500 text-slate-900">Day 5: Full Body + Posture Integration</h2>
-                <h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-                <h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-            </section>
-
-             <!-- Daily Breaks -->
-            <section id="breaks" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-yellow-500 text-slate-900">Daily Posture Breaks (Outside the Gym)</h2>
-                <p class="text-slate-600 mb-6">These mini-sessions are crucial for reinforcing good habits throughout the day.</p>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-800 text-white mt-16">
-        <div class="container mx-auto p-6 text-center">
-            <p>&copy; 2025 Posture Correction Program. Stay strong and aligned!</p>
-        </div>
-    </footer>
-
-    <!-- Video Modal -->
-    <div id="videoModal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 transition-opacity duration-300">
-        <div class="bg-black rounded-lg shadow-2xl w-full max-w-4xl aspect-video relative">
-            <button id="closeModal" class="absolute -top-2 -right-2 md:-top-3 md:-right-3 bg-white text-black rounded-full h-9 w-9 flex items-center justify-center text-2xl font-bold z-10 hover:bg-slate-200 transition-colors">&times;</button>
-            <iframe id="videoPlayer" class="w-full h-full rounded-lg" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <script>
+<!-- Header -->
+<header class="bg-white shadow-md sticky top-0 z-40">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="text-xl md:text-2xl font-bold text-slate-900">Posture Program</h1>
+<div class="hidden md:flex space-x-4">
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#day1">Day 1</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#day2">Day 2</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#day3">Day 3</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#day4">Day 4</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#day5">Day 5</a>
+<a class="text-slate-600 hover:text-blue-600 transition-colors" href="#breaks">Breaks</a>
+</div>
+<button class="md:hidden focus:outline-none" id="mobile-menu-button">
+<svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</nav>
+<div class="hidden md:hidden px-6 pb-4" id="mobile-menu">
+<a class="block py-2 text-slate-600 hover:text-blue-600" href="#day1">Day 1</a>
+<a class="block py-2 text-slate-600 hover:text-blue-600" href="#day2">Day 2</a>
+<a class="block py-2 text-slate-600 hover:text-blue-600" href="#day3">Day 3</a>
+<a class="block py-2 text-slate-600 hover:text-blue-600" href="#day4">Day 4</a>
+<a class="block py-2 text-slate-600 hover:text-blue-600" href="#day5">Day 5</a>
+<a class="block py-2 text-slate-600 hover:text-blue-600" href="#breaks">Breaks</a>
+</div>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto p-4 md:p-8">
+<section class="mb-12 text-center">
+<h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Your Interactive Guide to the 5-Day Posture Program</h1>
+<p class="max-w-3xl mx-auto text-lg text-slate-600">A blueprint for a stronger, more aligned body. Click the button on each card to see a visual demonstration of the exercise.</p>
+</section>
+<!-- Workout Plan Container -->
+<div id="workout-plan">
+<!-- Day 1 -->
+<section class="mb-16" id="day1">
+<h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-blue-500 text-slate-900">Day 1: Upper Body Push + Posture Focus</h2>
+<h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+<h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Front Delt Raises</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 12-15</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Focus on raising arms to shoulder height only, using controlled form.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('3VcKaXpzqRo')">Watch Video</button>
+</div><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Arnold Press</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 10-12</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Rotate wrists during press for maximum shoulder engagement.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('6Z15_WdXmVw')">Watch Video</button>
+</div></div>
+</section>
+<!-- Day 2 -->
+<section class="mb-16" id="day2">
+<h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-green-500 text-slate-900">Day 2: Lower Body + Hip Mobility</h2>
+<h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+<h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Bulgarian Split Squats</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 12-15 each leg</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Lower your hips straight down to avoid forward knee drift.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('2C-uNgKwPLE')">Watch Video</button>
+</div><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Leg Extensions</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 15-20</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Control both up and down motion for full quad contraction.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('YyvSfVjQeL0')">Watch Video</button>
+</div><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Terminal Knee Extensions</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 15-20</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Focus on locking out the knee fully against band resistance.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('WyW1F0aAZnQ')">Watch Video</button>
+</div></div>
+</section>
+<!-- Day 3 -->
+<section class="mb-16" id="day3">
+<h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-purple-500 text-slate-900">Day 3: Upper Body Pull + Back Focus</h2>
+<h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+<h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Face Pulls</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 15-20</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Use light weight and slow control to hit rear delts.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('rep-qVOkqgk')">Watch Video</button>
+</div><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Wall Angels</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 15-20</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Maintain contact with wall and move slowly to improve mobility.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('M0QIL4NlIHQ')">Watch Video</button>
+</div></div>
+</section>
+<!-- Day 4 -->
+<section class="mb-16" id="day4">
+<h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-orange-500 text-slate-900">Day 4: Functional Movement + Core</h2>
+<h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+<h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Y-T-W Raises</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 10 each position</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Use light weights and hold each position for 1-2 seconds.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('LzLiCFw5YfI')">Watch Video</button>
+</div><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Scapular Wall Slides</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 12-15</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Keep back and arms against the wall throughout movement.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('pNDqe5glMT8')">Watch Video</button>
+</div></div>
+</section>
+<!-- Day 5 -->
+<section class="mb-16" id="day5">
+<h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-red-500 text-slate-900">Day 5: Full Body + Posture Integration</h2>
+<h3 class="text-2xl font-semibold mt-8 mb-4 text-slate-700">Pre-Workout Activation</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+<h3 class="text-2xl font-semibold mt-10 mb-4 text-slate-700">Strength Training</h3>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Sissy Squats</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 10-15</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Lean back and keep hips extended to isolate quads.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('fAUpuu00GPU')">Watch Video</button>
+</div><div class="exercise-card bg-white rounded-lg shadow-sm p-5 flex flex-col justify-between border-l-4 border-slate-200 hover:border-blue-500">
+<div>
+<h4 class="font-bold text-lg text-slate-900">Band Pull-Aparts (horizontal)</h4>
+<p class="text-sm text-slate-500 mb-3">3 sets of 20-25</p>
+<p class="text-slate-600 text-base mb-4">
+<span class="font-semibold text-slate-700">Expert's Note:</span> Focus on squeezing your shoulder blades together at end range.
+            </p>
+</div>
+<button class="inline-flex items-center justify-center mt-auto bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 transition-colors w-full" onclick="openModal('JObYtU7Y7ag')">Watch Video</button>
+</div></div>
+</section>
+<!-- Daily Breaks -->
+<section class="mb-16" id="breaks">
+<h2 class="text-3xl font-bold mb-6 pb-2 border-b-2 border-yellow-500 text-slate-900">Daily Posture Breaks (Outside the Gym)</h2>
+<p class="text-slate-600 mb-6">These mini-sessions are crucial for reinforcing good habits throughout the day.</p>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-800 text-white mt-16">
+<div class="container mx-auto p-6 text-center">
+<p>© 2025 Posture Correction Program. Stay strong and aligned!</p>
+</div>
+</footer>
+<!-- Video Modal -->
+<div class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 transition-opacity duration-300" id="videoModal">
+<div class="bg-black rounded-lg shadow-2xl w-full max-w-4xl aspect-video relative">
+<button class="absolute -top-2 -right-2 md:-top-3 md:-right-3 bg-white text-black rounded-full h-9 w-9 flex items-center justify-center text-2xl font-bold z-10 hover:bg-slate-200 transition-colors" id="closeModal">×</button>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full h-full rounded-lg" frameborder="0" id="videoPlayer" src="" title="YouTube video player"></iframe>
+</div>
+</div>
+<script>
         // Data for the workout plan
         const workoutData = {
             day1: {
